@@ -14,7 +14,7 @@ baseurl: ""                             # for example, '/blog' if your blog host
 RSS: false
 weibo_username:     huxpro
 zhihu_username:     huxpro
-github_username:    huxpro
+github_username:    BeEagle
 #twitter_username:  huxpro
 facebook_username:  huxpro
 # linkedin_username:  firstname-lastname-idxxxx
@@ -56,14 +56,6 @@ duoshuo_username: huxblog
 duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
 
-
-
-# Analytics settings
-# Baidu Analytics
-ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
-# Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
 
 
 
