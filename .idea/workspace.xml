@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e203a115-dc1c-4467-8c21-0210d1eb131c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-02-17-chen-dao-ming-preface.markdown" afterPath="$PROJECT_DIR$/_posts/2017-02-17-chen-dao-ming-preface.markdown" />
     </list>
     <ignored path="BeEagle.github.io.iws" />
@@ -28,8 +27,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-02-17-chen-dao-ming-preface.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.748">
-                <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <first_editor vertical-scroll-proportion="0.388">
+                <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -44,8 +43,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2015-06-15-alitrip-strategy.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="-0.272">
-                <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+              <first_editor vertical-scroll-proportion="0.17">
+                <caret line="68" column="20" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="20" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -135,6 +134,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeEagle.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BeEagle.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="in-post" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -712,8 +729,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2015-06-15-alitrip-strategy.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="-0.272">
-            <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <first_editor vertical-scroll-proportion="0.17">
+            <caret line="68" column="20" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="20" />
             <folding />
           </first_editor>
           <second_editor />
@@ -726,8 +743,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-02-17-chen-dao-ming-preface.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.748">
-            <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <first_editor vertical-scroll-proportion="0.388">
+            <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
             <folding />
           </first_editor>
           <second_editor />
