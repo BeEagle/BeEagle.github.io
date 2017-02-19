@@ -39,7 +39,7 @@ tags:
 　　我想未来你还会行走得更远，也会磨砺得更美好，如师如父，我愿始终都能给你满怀的祝福和坚实的守护。
 
 
-　  ![img](/img/in-post/20170218/jiangyiyan05.png)
+　  ![img](/img/in-post/20170218/jiangyiyan05.PNG)
 
 ![img](https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1487475176&di=f77b49d83d5e7c1beb2632b5448c1e7c&src=http://img.e0575.com/attachment/Day_111116/173_1151003_62c983c88935f42.jpg)
 　
