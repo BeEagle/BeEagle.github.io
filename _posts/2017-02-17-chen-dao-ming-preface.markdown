@@ -15,7 +15,7 @@ tags:
 
 ![img](/img/in-post/20170218/jiangyiyan01.PNG)
 
-![img](/img/in-post/20170218/jiangyiyan03.PNG)
+
 　
 　
 蒙蒙：
@@ -29,7 +29,9 @@ tags:
 ![img](/img/in-post/20170218/jiangyiyan02.PNG)
 
 　　我希望你总是能和现在一样，是快乐的，自由的，骄傲的。世界上本没有什么必然的成功模式，所以没有必要去模仿迎合，去谨小慎微。青春不需要任何人任何地方帮你安放，安放在自己的手心足矣。你唱歌的时候她和你一起投入，你舞蹈的时候她和你一起怒放，你远行的时候她和你一起听风。每一个人，都会喜欢这样的你。
-　　
+　
+ ![img](/img/in-post/20170218/jiangyiyan05.PNG)
+ 
 　　我希望你再忙，也要有时间读书和学习。韶光易逝，刹那芳华，皮相给你的充其量是数年的光鲜，但除此之外，你更需要的是你在一生中都能源源不断给你带来优雅和安宁的力量。不少演员费尽周折地美化自己的样子，我却宁可你花更多的时间来涵养你的才情。比如像现在这样，写一本书来记录和思想这些年来的奔跑进取，如同在上一趟旅行之后，下一趟旅行之前，拾拣满满当当的行李箱，扔掉一些不要的东西，送掉一些给朋友的礼物，留下一些以后还会需要的，珍藏一些刻骨铭心的，另外一定还有些东西，我们可以看到或者看不到，但对你来说已经成为历久弥坚的信仰。
 　　
 　　![img](/img/in-post/20170218/jiangyiyan04.PNG)
@@ -39,9 +41,9 @@ tags:
 　　我想未来你还会行走得更远，也会磨砺得更美好，如师如父，我愿始终都能给你满怀的祝福和坚实的守护。
 
 
-　  ![img](/img/in-post/20170218/jiangyiyan05.PNG)
+   ![img](/img/in-post/20170218/jiangyiyan03.PNG)
 
-![img](https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1487475176&di=f77b49d83d5e7c1beb2632b5448c1e7c&src=http://img.e0575.com/attachment/Day_111116/173_1151003_62c983c88935f42.jpg)
+//![img](https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1487475176&di=f77b49d83d5e7c1beb2632b5448c1e7c&src=http://img.e0575.com/attachment/Day_111116/173_1151003_62c983c88935f42.jpg)
 　
 
 ---
