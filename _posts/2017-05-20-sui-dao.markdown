@@ -4,7 +4,7 @@ title:      "电影《隧道》 影评 "
 subtitle:   "韩国灾难片感想"
 date:       2017-05-21
 author:     "Troy"
-header-img: "img/in-post/20170520/0.PNG"
+header-img: "img/in-post/20170520/0.jpg"
 catalog: true
 tags:
     - 韩国
@@ -12,33 +12,33 @@ tags:
 ---
 > 灾难让人成长，而成长总是需要代价的。在成长的过程中，我们每一个都要慢慢学会变得勇敢，变得更强大。
 
-![img](/img/in-post/20170520/1.PNG)
-![img](/img/in-post/20170520/2.PNG)
-![img](/img/in-post/20170520/3.PNG)
-![img](/img/in-post/20170520/4.PNG)
-![img](/img/in-post/20170520/5.PNG)
-![img](/img/in-post/20170520/6.PNG)
-![img](/img/in-post/20170520/7.PNG)
-![img](/img/in-post/20170520/8.PNG)
-![img](/img/in-post/20170520/9.PNG)
-![img](/img/in-post/20170520/10.PNG)
-![img](/img/in-post/20170520/11.PNG)
-![img](/img/in-post/20170520/12.PNG)
-![img](/img/in-post/20170520/13.PNG)
-![img](/img/in-post/20170520/14.PNG)
-![img](/img/in-post/20170520/15.PNG)
-![img](/img/in-post/20170520/16.PNG)
-![img](/img/in-post/20170520/17.PNG)
-![img](/img/in-post/20170520/18.PNG)
-![img](/img/in-post/20170520/19.PNG)
-![img](/img/in-post/20170520/20.PNG)
-![img](/img/in-post/20170520/21.PNG)
-![img](/img/in-post/20170520/22.PNG)
-![img](/img/in-post/20170520/23.PNG)
-![img](/img/in-post/20170520/24.PNG)
-![img](/img/in-post/20170520/25.PNG)
-![img](/img/in-post/20170520/26.PNG)
-![img](/img/in-post/20170520/27.PNG)
+![img](/img/in-post/20170520/1.jpg)
+![img](/img/in-post/20170520/2.jpg)
+![img](/img/in-post/20170520/3.jpg)
+![img](/img/in-post/20170520/4.jpg)
+![img](/img/in-post/20170520/5.jpg)
+![img](/img/in-post/20170520/6.jpg)
+![img](/img/in-post/20170520/7.jpg)
+![img](/img/in-post/20170520/8.jpg)
+![img](/img/in-post/20170520/9.jpg)
+![img](/img/in-post/20170520/10.jpg)
+![img](/img/in-post/20170520/11.jpg)
+![img](/img/in-post/20170520/12.jpg)
+![img](/img/in-post/20170520/13.jpg)
+![img](/img/in-post/20170520/14.jpg)
+![img](/img/in-post/20170520/15.jpg)
+![img](/img/in-post/20170520/16.jpg)
+![img](/img/in-post/20170520/17.jpg)
+![img](/img/in-post/20170520/18.jpg)
+![img](/img/in-post/20170520/19.jpg)
+![img](/img/in-post/20170520/20.jpg)
+![img](/img/in-post/20170520/21.jpg)
+![img](/img/in-post/20170520/22.jpg)
+![img](/img/in-post/20170520/23.jpg)
+![img](/img/in-post/20170520/24.jpg)
+![img](/img/in-post/20170520/25.jpg)
+![img](/img/in-post/20170520/26.jpg)
+![img](/img/in-post/20170520/27.jpg)
 
 ## 隧道
 
