@@ -4,7 +4,7 @@ title:      "数据库框架 greendao 使用实践 "
 subtitle:   "greendao 使用"
 date:       2017-12-01
 author:     "Troy"
-header-img: "img/post-bg-alitrip.jpg"
+header-img: "img/post-bg/20171201_lunduneye.jpg"
 catalog: true
 tags:
     - Android
@@ -12,8 +12,8 @@ tags:
 ---
 > 所行者宽，所知者广
 
-[^_^]:
-    ![img](/img/in-post/20170218/jiangyiyan01.PNG)
+
+  [^_^]:  ![img](/img/in-post/20170218/jiangyiyan01.PNG)
 
 
 ## 目录
@@ -51,11 +51,12 @@ greenDao 是一个将对象映射到SQLite 数据库中的轻量且快速的 ORM
    `classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'`
   
   Module 的build.gradle 文件，增加 greenDao api 依赖，如果需要支持Rxjava ，同时增加RxJava 依赖：
+
 `apply plugin: 'org.greenrobot.greendao'`
  
 `compile 'org.greenrobot:greendao:3.2.2' // add library`
 #### 2.2、实体类
-当项目使用一个实体类时，需使用注解 
+当项目使用一个实体类时，需使用注解:
     
     @Entity：
     @Entity(nameInDb = "user", active = true)
@@ -184,7 +185,7 @@ make 项目，greendao 插件会自动生成对应User 的 UserDao 类 , DaoSess
 
  
  
-#### 官网地址：
+#### 官网地址
 
 * [greenDao](http://greenrobot.org/greendao/)
 * [github](https://github.com/greenrobot/greenDAO)
