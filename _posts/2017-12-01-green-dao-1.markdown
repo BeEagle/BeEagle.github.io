@@ -1,0 +1,199 @@
+---
+layout:     post
+title:      "数据库框架 greendao 使用实践 "
+subtitle:   "greendao 使用"
+date:       2017-12-01
+author:     "Troy"
+header-img: "img/post-bg-alitrip.jpg"
+catalog: true
+tags:
+    - Android
+---
+> 所行者宽，所知者广
+
+[^_^]:
+    ![img](/img/in-post/20170218/jiangyiyan01.PNG)
+
+
+## 目录
+
+ 
+1. 简介
+2. 使用  
+    * 2.1、gradle 配置
+    * 2.2、实体类
+    * 2.3、基本操作
+    * 2.4、操作配合RxJava 使用
+    * 2.5、注解
+    * 2.6、Convert 注解
+
+## 1.简介
+
+greenDao 是一个将对象映射到SQLite 数据库中的轻量且快速的 ORM (object relational mapping) 解决方案。
+对象关系映射的图示如下：
+
+![img](/img/in-post/20171201/green1.png)
+
+相比于其他的数据库框架（ActiveAndroid、LitePal）,greendao  的优势在于：
+
+* 高性能
+* 简单易用的 api
+* 低内存消耗
+* 支持数据库加密
+* 比较小的lib （<100k）
+ 
+## 2.使用
+#### 2.1、gradle 配置
+
+项目的 build.gradle 文件，增加 greenDao 插件依赖：
+    
+   `classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'`
+  
+  Module 的build.gradle 文件，增加 greenDao api 依赖，如果需要支持Rxjava ，同时增加RxJava 依赖：
+`apply plugin: 'org.greenrobot.greendao'`
+ 
+`compile 'org.greenrobot:greendao:3.2.2' // add library`
+#### 2.2、实体类
+当项目使用一个实体类时，需使用注解 
+    
+    @Entity：
+    @Entity(nameInDb = "user", active = true)
+    public class User {
+        @Id
+        private long id;
+        private String name;@Transient
+        private int tempUsage;
+    }
+
+make 项目，greendao 插件会自动生成对应User 的 UserDao 类 , DaoSession 类, DaoMaster 类;
+ 
+关于 DaoMaster 、DaoSession 、Dao 三者的关系如下：
+
+![img](/img/in-post/20171201/green2.png)
+
+- DaoMaster 类 是连接了底层的SqliteDb，用于创建或者删除数据表，数据库升级，创建 DaoSession ；
+- DaoSession 类 是用于获取与管理 所有实体的 Dao类 ；
+- Dao 继承自AbstractDao ，封装了数据库的增删改查基本操作；
+- Entity 用户自定义的实体类；
+
+#### 2.3、基本操作
+
+先获取对应实体的 Dao 类: 
+
+    `DaoMaster.DevOpenHelper mHelper = new DaoMaster.DevOpenHelper(this, "notes-db", null);
+         DaoSession mDaoSession = new DaoMaster(mHelper.getWritableDatabase()).newSession()；
+         UserDao mUserDao = mDaoSession .getUserDao();`
+         
+         
+增： 
+
+`User user = new User(100, "tom");
+ mUserDao.insert(user);` 
+ 
+删： 
+
+`mUserDao.deleteByKey(120l);`
+
+改：
+
+`mUserDao.update(new User(100, "tom2"));`
+
+查：
+
+`List<User> users = mUserDao.loadAll();`
+ 
+#### 2.4、操作配合RxJava 使用
+
+先获取对应实体的 RxDao 与 RxQuery ：
+
+`RxDao<User, Long>  mRxUserDao = mUserDao.rx();
+ RxQuery<User> mRxUserQuery = mUserDao.queryBuilder().rx();`
+
+增：
+                  
+              mRxUserDao.insert(new User(10, "tom"))
+                       .observeOn(AndroidSchedulers.mainThread())
+                       .subscribe(new Action1<User>() {
+                        @Override
+                        public void call(User user) {
+                               // 增加后的操作
+                              }
+                      });
+                     
+查：
+
+    mRxUserQuery.list()
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe(new Action1<List<User>>() {
+                @Override
+                public void call(List<User> users) {
+                   // 查询后的操作
+                }
+            });
+        
+#### 2.5、注解
+
+1. @Entity 定义实体，参数如下：
+    * @nameInDb  在数据库中的名字，如不写则为实体中类名
+    * @indexes  索引
+    * @createInDb  是否创建表，默认为true,false时不创建
+    * @schema   指定架构名称为实体
+    * @active   无论是更新生成都刷新
+2. @Id  主键id 
+3. @NotNull  不为null
+4. @Unique  唯一约束
+5. @ToMany   一对多
+6. @OrderBy  排序
+7. @ToOne     一对一
+8. @Transient    不存储在数据库中
+9. @generated    由greendao产生的构造函数或方法
+ 
+#### 2.6、Convert 注解
+用于属性转换，可以配合 PropertyConverter 使用
+实体类定义，有两个参数，converter 指定此属性使用的属性转换器，columnType 指定此字段在db 中的类型：
+
+    @Convert(converter = TimePropertyConverter.class, columnType = Long.class)
+        public String time;
+
+构造自定义属性转换器，比如我们在User 增加一个时间的字段，这个字段在Android 类中以 某年某月某日的展示，在存在数据库是以 毫秒值存储：
+    
+    // PropertyConverter<P, D> 
+    public class TimePropertyConverter implements PropertyConverter<String, Long> {
+         
+        @Override
+        public String convertToEntityProperty(Long databaseValue) {  //将数据库中的值，转换成我们需要的值；
+            SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm EEEE", Locale.CHINA);
+            String result = format.format(new Date(databaseValue));
+            return result;
+        }
+     
+        @Override
+        public Long convertToDatabaseValue(String entityProperty) {  //将实体类的此字段值，转换成数据库存取的值；
+            SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm EEEE", Locale.CHINA);
+            Long result;
+            try {
+                Date date = format.parse(entityProperty);
+                result = date.getTime();
+            } catch (ParseException e) {
+                result = 0L;
+            }
+            return result;
+        }
+    }    
+
+ 
+ 
+#### 官网地址：
+
+* [greenDao](http://greenrobot.org/greendao/)
+* [github](https://github.com/greenrobot/greenDAO)
+
+---
+
+*本篇完。*
+
+
+
+> 本文系作者原创文章。
+> 如有任何知识产权、版权问题或理论错误，还请指正。
+> 转载请注明原作者及以上信息。
